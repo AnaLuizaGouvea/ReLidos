@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "305020710983",
+    "firebase_url": "https://relidos-default-rtdb.firebaseio.com",
+    "project_id": "relidos",
+    "storage_bucket": "relidos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305020710983:android:43e3fceaea1768fd3a4162",
+        "android_client_info": {
+          "package_name": "com.example.relidos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzd-gLSH5u1P-rmdi7r7IprJpH9CR3SfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
