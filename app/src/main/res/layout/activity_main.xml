@@ -34,7 +34,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Seja bem-vindo"
-                        android:textColor="@color/black">
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/textView2"
