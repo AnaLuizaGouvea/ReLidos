@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ReLidos</string>
+    <string name="intro_title">Olá, <font color="#627453">leitor!</font></string>
+    <string name="intro_text">Encontre aqui os seus livros mais\nprocurados de forma fácil e\nsimples, com preços <font color="#627453">super\nacessíveis!</font></string>
 </resources>
