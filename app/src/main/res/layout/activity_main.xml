@@ -40,7 +40,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/viewpagerSlider"
-                app:selectedDotColor="@color/purple"
+                app:selectedDotColor="@color/darkGreen"
                 tools:visibility="visible" />
 
 
