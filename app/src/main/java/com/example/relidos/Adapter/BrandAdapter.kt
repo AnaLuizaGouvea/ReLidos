@@ -49,7 +49,7 @@ class BrandAdapter(val items:MutableList<BrandModel>):
         holder.binding.title.setTextColor(context.resources.getColor(R.color.white))
         if(selectedPosition==position){
             holder.binding.pic.setBackgroundResource(0)
-            holder.binding.mailLayout.setBackgroundResource(R.drawable.purple_bg)
+            holder.binding.mailLayout.setBackgroundResource(R.drawable.green_bg)
             ImageViewCompat.setImageTintList(
                 holder.binding.pic,
                 ColorStateList.valueOf(context.getColor(R.color.white)))
@@ -69,5 +69,5 @@ class BrandAdapter(val items:MutableList<BrandModel>):
     }
 
     override fun getItemCount(): Int = items.size
-    }
+    
 }

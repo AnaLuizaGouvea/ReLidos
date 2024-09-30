@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="464dp"
                 android:layout_marginTop="24dp"
-                app:srcCompat="@drawable/relidos_logo" />
+                app:srcCompat="@drawable/carrinho" />
 
             <TextView
                 android:id="@+id/textView2"
