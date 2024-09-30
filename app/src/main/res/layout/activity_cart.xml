@@ -56,7 +56,7 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:background="@drawable/purple_bg_top_corner"
+        android:background="@drawable/green_bg_top_corner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
