@@ -8,10 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.request.RequestOptions
-import com.example.relidos.Model.ItemModel
+import com.example.relidos.Model.ItemsModel
+import com.example.relidos.activity.DetailActivity
 import com.example.relidos.databinding.ViewholderRecommendedBinding
 
-class PopularAdapter(val items:MutableList<ItemModel>):RecyclerView.Adapter<PopularAdapter.ViewHolder>() {
+class PopularAdapter(val items:MutableList<ItemsModel>):RecyclerView.Adapter<PopularAdapter.ViewHolder>() {
     private var context:Context?=null
 
     class ViewHolder (val binding:ViewholderRecommendedBinding):
@@ -34,9 +35,11 @@ class PopularAdapter(val items:MutableList<ItemModel>):RecyclerView.Adapter<Popu
             .apply(requestOptions)
             .into(holder.binding.pic)
 
-//        holder.itemView.setOnClickListener{
-//            val intent=Intent(holder.itemView.context, )
-//        }
+        holder.itemView.setOnClickListener{
+            val intent= Intent(holder.itemView.context, DetailActivity::class.java )
+            intent.putExtra("object", items[position])
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = items.size
