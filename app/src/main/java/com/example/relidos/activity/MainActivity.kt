@@ -3,11 +3,13 @@ package com.example.relidos.activity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import com.example.relidos.Adapter.BrandAdapter
+import com.example.relidos.Adapter.PopularAdapter
 import com.example.relidos.Model.SliderModel
 import com.example.relidos.Adapter.SliderAdapter
 import com.example.relidos.ViewModel.MainViewModel
@@ -24,6 +26,7 @@ class MainActivity :BaseActivity() {
 
         initBanner()
         initBrand()
+        initPopular()
 
     }
 
@@ -64,6 +67,18 @@ class MainActivity :BaseActivity() {
 
         })
         viewModel.loadBrand()
+    }
+
+    private fun initPopular(){
+        binding.progressBarPopular.visibility=View.VISIBLE
+        viewModel.popular.observe(this, Observer {
+            binding.viewPopular.layoutManager=
+                GridLayoutManager(this@MainActivity, 2)
+            binding.viewPopular.adapter=PopularAdapter(it)
+            binding.progressBarPopular.visibility=View.GONE
+
+        })
+        viewModel.loadPopular()
     }
 
 }
