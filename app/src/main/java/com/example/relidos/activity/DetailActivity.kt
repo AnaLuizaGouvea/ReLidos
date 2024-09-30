@@ -1,6 +1,7 @@
 package com.example.relidos.activity
 
 import ManagmentCart
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -90,6 +91,7 @@ class DetailActivity : BaseActivity() {
             finish()
         }
         binding.cartBtn.setOnClickListener{
+            startActivity(Intent(this@DetailActivity,CartActivity::class.java))
 
         }
     }

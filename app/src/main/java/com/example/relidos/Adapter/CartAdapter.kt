@@ -1,6 +1,7 @@
 package com.example.relidos.Adapter
 
-import com.example.relidos.Model.ItemModel
+import ManagmentCart
+import com.example.relidos.Model.ItemsModel
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -13,7 +14,7 @@ import com.example.relidos.databinding.ViewholderBrandBinding
 import com.example.relidos.databinding.ViewholderCartBinding
 
 
-class CartAdapter (private val listItemSelected:ArrayList<ItemModel>,
+class CartAdapter (private val listItemSelected:ArrayList<ItemsModel>,
     context: Context,
     var changeNumberItemsListener: ChangeNumberItemsListener?=null):RecyclerView.Adapter<CartAdapter.ViewHolder>() {
 
@@ -33,7 +34,7 @@ class CartAdapter (private val listItemSelected:ArrayList<ItemModel>,
 
         holder.binding.titleTxt.text=item.title
         holder.binding.feeEachItem.text="$${item.price}"
-        holder.binding.totalEachItem.text="$${Math.round(*item.price)}"
+        holder.binding.totalEachItem.text="$${Math.round(item.numberInCart*item.price)}"
         holder.binding.numberItemTxt.text=item.numberInCart.toString()
 
         Glide.with(holder.itemView.context)
