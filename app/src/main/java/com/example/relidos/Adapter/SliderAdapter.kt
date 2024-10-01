@@ -16,6 +16,7 @@ import com.example.relidos.R
 class SliderAdapter(private var sliderItems:List <SliderModel>,
                     private val viewPager2: ViewPager2
 ):RecyclerView.Adapter<SliderAdapter.SliderViewHolder>() {
+
     private lateinit var context:Context
 
     private val runnable = Runnable {

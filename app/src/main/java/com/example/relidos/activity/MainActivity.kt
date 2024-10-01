@@ -42,19 +42,17 @@ class MainActivity :BaseActivity() {
         }
     }
 
-
     private fun initBanner(){
         binding.progressBarBanner.visibility=View.VISIBLE
         viewModel.banners.observe(this, { items ->
             banners(items)
             binding.progressBarBanner.visibility=View.GONE
         })
-
         viewModel.loadBanners()
     }
 
     private fun banners(images:List<SliderModel>){
-        binding.viewpagerSlider.adapter= SliderAdapter(images, binding.viewpagerSlider)
+        binding.viewpagerSlider.adapter = SliderAdapter(images, binding.viewpagerSlider)
         binding.viewpagerSlider.clipToPadding=false
         binding.viewpagerSlider.clipChildren=false
         binding.viewpagerSlider.offscreenPageLimit=3

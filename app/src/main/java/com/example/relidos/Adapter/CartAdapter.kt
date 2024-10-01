@@ -59,11 +59,6 @@ class CartAdapter (private val listItemSelected:ArrayList<ItemsModel>,
                 }
             })
         }
-
-
-
-
-
     }
 
     override fun getItemCount(): Int=listItemSelected.size

@@ -18,10 +18,8 @@ class MainViewModel():ViewModel() {
     private val _brand = MutableLiveData<MutableList<BrandModel>>()
     private val _popular = MutableLiveData<MutableList<ItemsModel>>()
 
-
-    val brands: LiveData<MutableList<BrandModel>> = _brand
-
     val banners: LiveData<List<SliderModel>> = _banner
+    val brands: LiveData<MutableList<BrandModel>> = _brand
 
     val popular: LiveData<MutableList<ItemsModel>> = _popular
 
