@@ -247,7 +247,7 @@
                     android:layout_height="22dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/house" />
+                    app:srcCompat="@drawable/home_icon" />
 
                 <TextView
                     android:id="@+id/textView71"
@@ -273,7 +273,7 @@
                     android:layout_height="22dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/cart" />
+                    app:srcCompat="@drawable/cart_icon" />
 
                 <TextView
                     android:id="@+id/textView72"
@@ -328,7 +328,7 @@
                     android:layout_height="22dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/profile_icon_bar" />
+                    app:srcCompat="@drawable/profile_icon" />
 
                 <TextView
                     android:id="@+id/textView74"

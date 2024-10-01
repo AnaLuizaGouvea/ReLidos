@@ -51,17 +51,16 @@ class CartActivity : BaseActivity() {
 
     }
     private fun calculateCart(){
-        val percentTax=0.02
+        //val percentTax=0.02
         val delivery=0.0
-        tax=Math.round((managmentCart.getTotalFee()*percentTax)*100)/100.0
-        val total=Math.round((managmentCart.getTotalFee()+tax+delivery)*100)/100
+        //tax=Math.round((managmentCart.getTotalFee()*percentTax)*100)/100.0
+        val total=Math.round((managmentCart.getTotalFee()+delivery)*100)/100
         val itemTotal=Math.round(managmentCart.getTotalFee()*100)/100
 
         with(binding){
-            totalFeeTxt.text="$$itemTotal"
-            taxTxt.text="$$tax"
-            deliveryTxt.text="$$delivery"
-            totalTxt.text="$$total"
+            totalFeeTxt.text="R$$itemTotal"
+            deliveryTxt.text="R$$delivery"
+            totalTxt.text="R$$total"
 
 
         }

@@ -42,14 +42,14 @@ class CartAdapter (private val listItemSelected:ArrayList<ItemsModel>,
             .apply(RequestOptions().transform(CenterCrop()))
             .into(holder.binding.pic)
 
-        holder.binding.plusCartBtn.setOnClickListener{
-            managementCart.plusItem(listItemSelected,position,object : ChangeNumberItemsListener {
-                override fun onChanged() {
-                    notifyDataSetChanged()
-                    changeNumberItemsListener?.onChanged()
-                }
-            })
-        }
+//        holder.binding.plusCartBtn.setOnClickListener{
+//            managementCart.plusItem(listItemSelected,position,object : ChangeNumberItemsListener {
+//                override fun onChanged() {
+//                    notifyDataSetChanged()
+//                    changeNumberItemsListener?.onChanged()
+//                }
+//            })
+//        }
 
         holder.binding.minusCartBtn.setOnClickListener{
             managementCart.minusItem(listItemSelected,position,object :ChangeNumberItemsListener{

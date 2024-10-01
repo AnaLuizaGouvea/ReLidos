@@ -46,8 +46,8 @@ class DetailActivity : BaseActivity() {
             sizeList.add(size.toString())
         }
 
-        binding.sizeList.adapter=SizeAdapter(sizeList)
-        binding.sizeList.layoutManager=LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+//        binding.sizeList.adapter=SizeAdapter(sizeList)
+//        binding.sizeList.layoutManager=LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         val colorList=ArrayList<String>()
         for (imagemUrl in item.picUrl){
@@ -82,7 +82,7 @@ class DetailActivity : BaseActivity() {
         binding.titleText.text=item.title
         binding.descriptionText.text=item.description
         binding.priceText.text="R$"+item.price
-        binding.ratingText.text="${item.rating} Rating"
+//        binding.ratingText.text="${item.rating} Rating"
         binding.addToCartBtn.setOnClickListener {
             item.numberInCart=number0rder
             managmentCart.insertFood(item)

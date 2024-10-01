@@ -102,47 +102,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Selection Size"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="14sp"/>
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    app:srcCompat="@drawable/star" />
-
-                <TextView
-                    android:id="@+id/ratingText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="5" />
-            </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/sizeList"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"/>
-
             <TextView
                 android:id="@+id/descriptionText"
                 android:layout_width="match_parent"

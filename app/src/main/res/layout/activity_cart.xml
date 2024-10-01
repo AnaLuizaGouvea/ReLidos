@@ -104,16 +104,6 @@
                 app:layout_constraintTop_toBottomOf="@id/textView12" />
 
             <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Total Tax"
-                android:textColor="@color/white"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView13" />
-
-            <TextView
                 android:id="@+id/totalFeeTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -135,28 +125,15 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/textView13" />
 
-            <TextView
-                android:id="@+id/taxTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="R$-"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@id/textView14"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/textView14"
-                tools:layout_constraintBottom_toBottomOf="@id/textView14" />
-
             <View
                 android:id="@+id/view"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="35dp"
                 android:background="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/taxTxt" />
+                app:layout_constraintTop_toBottomOf="@+id/deliveryTxt" />
 
             <TextView
                 android:id="@+id/textView18"
